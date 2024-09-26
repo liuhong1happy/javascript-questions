@@ -5,19 +5,35 @@ Svakodnevno postavljam JavaScript pitanja s višestrukim izborom na moj
 [Instagram](https://www.instagram.com/theavocoder), koja  također objavljujem
 ovdje!
 
-Od osnovnog do naprednog: testirajte koliko dobro znate JavaScript, osvježite svoj
-znanje malo, ili pripremiti za svoj intervju! :muscle: :rocket:
+Od osnovnog do naprednog: testirajte koliko dobro znate JavaScript, malo osvježite 
+svoje znanje, ili se pripremite za svoj intervju! :muscle: :rocket:
 Ovaj tjedni repo ažuriram s novim pitanjima.
 
 Odgovori su jednostavno dijelovima ispod pitanja
 kliknite na njih da biste ih proširili. Sretno :heart:
 
-
-[Kineski 中文版本](./README-zh_CN.md)  
-[Ruski](./README_ru-RU.md)  
-[Zapadni balkan](./README-bs_BS.md)  
-[Njemački](./README-de_DE.md) <br>
-[Vijetnamski](./README-vi.md)  
+- [🇸🇦 العربية](../ar-AR/README_AR.md)
+- [🇪🇬 اللغة العامية](../ar-EG/README_ar-EG.md)
+- [🇩🇪 Deutsch](../de-DE/README.md)
+- [🇬🇧 English](../README.md)
+- [🇪🇸 Español](../es-ES/README-ES.md)
+- [🇫🇷 Français](../fr-FR/README_fr-FR.md)
+- [🇮🇩 Indonesia](../id-ID/README.md)
+- [🇮🇹 Italiano](../it-IT/README.md)
+- [🇯🇵 日本語](../ja-JA/README-ja_JA.md)
+- [🇰🇷 한국어](../ko-KR/README-ko_KR.md)
+- [🇳🇱 Nederlands](../nl-NL/README.md)
+- [🇵🇱 Polski](../pl-PL/README.md)
+- [🇧🇷 Português Brasil](../pt-BR/README_pt_BR.md)
+- [🇷o Română](../ro-RO/README.ro.md)
+- [🇷🇺 Русский](../ru-RU/README.md)
+- [🇽🇰 Shqip](../sq-KS/README_sq_KS.md)
+- [🇹🇭 ไทย](../th-TH/README-th_TH.md)
+- [🇹🇷 Türkçe](../tr-TR/README-tr_TR.md)
+- [🇺🇦 Українська мова](../uk-UA/README.md)
+- [🇻🇳 Tiếng Việt](../vi-VI/README-vi.md)
+- [🇨🇳 简体中文](../zh-CN/README-zh_CN.md)
+- [🇹🇼 繁體中文](../zh-TW/README_zh-TW.md)
 
 * * * * *
 
@@ -52,10 +68,10 @@ još nismo definirali varijablu na liniji gdje pokušavamo prijaviti
 varijabla `name`, tako da još uvijek sadrži vrijednost` undefined`.
 
 Varijable s ključnom riječi `let` (i` const`) su podignute, ali za razliku od njih
-`var`, ne bivaju <i> inicijalizirane </i>. Nisu dostupni prije
-linije na kojo ih proglašavamo (inicijaliziramo). To se naziva "temporal dead zone".
+`var`, ne bivaju <i> inicijalizirane </i>. Nisu dostupne prije
+linije na kojoj ih proglašavamo (inicijaliziramo). To se naziva "temporal dead zone".
 Kada pokušamo pristupiti varijablama prije nego što budu deklarirane,
-JavaScript iz bacuje `ReferenceError`.
+JavaScript izbacuje `ReferenceError`.
 
 </p>
 </details>
@@ -168,7 +184,7 @@ Niz '' Lydia '' je istinita vrijednost. Ono što zapravo tražimo jest
 
 * * * * *
 
-###### 5. Koja je istina?
+###### 5. Što je od ovoga istina?
 
 ```javascript
 const bird = {
@@ -196,9 +212,9 @@ iako ih možda ne * upisujemo kao * nizove, oni se uvijek pretvaraju
 u String ispod "haube".
 
 JavaScript tumači (ili odlaže) izjave. Kada koristimo zagradu
-notacija, on vidi prvu otvarnu zagradu ```i nastavlja dalje do nje
+notacija, on vidi prvu otvorenu zagradu ```i nastavlja dalje do nje
 pronalazi završnu zagradu `]`. Tek tada će procijeniti
-izjava.
+izjavu.
 
 `mouse [bird.size]`: Prvo procjenjuje `bird.size`, što je` `small``.
 `mouse [" small "]` vraća "true"
@@ -215,7 +231,6 @@ To nije valjano, a bit će u pitanju pogreška slična onoj
 
 * * * * *
 
-* * * * *
 
 ###### 6. Što je izlaz?
 
@@ -239,7 +254,7 @@ console.log(d.greeting);
 
 #### Odgovor: A
 
-U JavaScriptu, svi objekti međusobno djeluju * referencom * kada ih postavljaju
+U JavaScriptu, svi objekti međusobno djeluju *referencom* kada ih postavljaju
 jednaki.
 
 Prvo, varijabla `c` sadrži vrijednost objekta. Kasnije dodijelimo `d`
@@ -276,15 +291,15 @@ console.log(b === c);
 
 #### Odgovor: C
 
-`new Number ()` je ugrađeni konstruktor function. Iako izgleda
+`new Number ()` je ugrađena konstruktor funkcija. Iako izgleda
 kao broj, to zapravo nije broj: ima gomilu ekstra dodataka
 pa je zbog toga objekt.
 
-Kada koristimo `==` operatora, on samo provjerava ima li isti
+Kada koristimo `==` operator, on samo provjerava ima li isti
 *vrijednost*. Obje imaju vrijednost `3`, pa se vraća 'true'.
 
 Međutim, kada koristimo `===` operator, obje vrijednosti * i * trebaju biti
-isto. To nije: `new Number ()` nije broj, to je ** objekt **.
+iste. To nije: `new Number ()` nije broj, to je ** objekt **.
 Oba vraćaju "false"
 
 </p>
@@ -362,7 +377,7 @@ da ste deklarirali varijablu prije nego je postavite na bilo što.
 
 * * * * *
 
-###### 10. Što se događa kada to učinimo?
+###### 10. Što se događa kada učinimo ovo?
 
 ```javascript
 function bark() {
@@ -382,12 +397,12 @@ bark.animal = "dog";
 
 #### Odgovor: A
 
-To je moguće u JavaScriptu, jer su funkcije objekti!
+Ovo je moguće u JavaScriptu, jer su funkcije objekti!
 (Sve osim primitivnih tipova su objekti)
 
 function je posebna vrsta objekta. Kod koji sami napišete
-nije stvarna function. function je objekt sa svojstvima.
-Ova nekretnina je nepovratna.
+nije stvarna funkcija. Function je objekt sa svojstvima.
+To svojstvo je nepovratno.
 
 </p>
 </details>
@@ -421,7 +436,7 @@ console.log(member.getFullName());
 #### Odgovor: A
 
 Ne možete dodati svojstva konstruktoru kao što možete s uobičajenim
-objekti. Ako želite dodati značajku svim objektima odjednom, imate
+objektima. Ako želite dodati značajku svim objektima odjednom, imate
 umjesto toga koristiti prototip. Dakle, u ovom slučaju,
 
 ```{.js}
@@ -430,12 +445,12 @@ Person.prototype.getFullName = function () {
 };
 ```
 
-bi učinio `member.getFullName ()`. Zašto je to korisno? Reći će mo
+bi učinio `member.getFullName ()`. Zašto je to korisno? Reći ćemo
 da smo tu metodu dodali samom konstruktoru. Možda ne svaki
 Primjer "Person" trebao je ovu metodu. To bi trošilo puno memorije
 scopa (prostora), jer bi oni još uvijek imali tu svojinu, koja uzima memoriju
 scopa za svaku instancu. Umjesto toga, ako ga samo dodamo prototipu, mi
-će mo je imati na jednom mjestu u memoriji, ali svi imaju pristup!
+ćemo je imati na jednom mjestu u memoriji, ali svi imaju pristup!
 
 </p>
 </details>
@@ -469,8 +484,8 @@ console.log(sarah);
 
 #### Odgovor: A
 
-Za `sarah` nismo koristili ključnu riječ` new`. Kada koristite "new", to
-odnosi se na new prazni objekt koji stvaramo. Međutim, ako ne dodate
+Za `Sarah` nismo koristili ključnu riječ` new`. Kada koristite "new", to
+odnosi se na novi prazni objekt koji stvaramo. Međutim, ako ne dodate
 `new` se odnosi na ** globalni objekt **!
 
 Rekli smo da je "this.ime" jednako "Sarah" i `this.prezime`
@@ -934,7 +949,7 @@ String.prototype.giveLydiaPizza = () => {
 
 const name = "Lydia";
 
-name.giveLydiaPizza();
+console.log(name.giveLydiaPizza())
 ```
 
 - A: `` Već daj Lizijinu pizzu! ``
